@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2020-12
+date: 2022-07
 inline: true
 related_posts: false
 ---
 
-One paper was accepted by AAAI 2021
+Two papers were accepted by ECCV 2022.

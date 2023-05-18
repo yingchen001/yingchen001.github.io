@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2020-12
+date: 2022-02
 inline: true
 related_posts: false
 ---
 
-One paper was accepted by AAAI 2021
+Three papers were accepted by CVPR 2022.

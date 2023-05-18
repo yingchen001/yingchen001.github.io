@@ -1,12 +1,7 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - yingchen001
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - yingchen001/WaveFill
+  - yingchen001/BAT-Fill
+  - yingchen001/CF-CLIP
