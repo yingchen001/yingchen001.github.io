@@ -240,7 +240,7 @@ blockquote {
   margin-right: 1rem;
 }
 
-@media (min-width: 384px) {
+@media (min-width: 448px) {
   .profile {
     width: 25%;
   }
