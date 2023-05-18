@@ -33,10 +33,8 @@
       year: 2018 - 2020
       description:
         - Researched and developed AI applications for brain diagnosis using medical images
-        - Participated and led a brain hematoma expansion prediction project, including designing pipelines for
-data collection and annotation
-        - Designed and built deep learning models for hematoma segmentation and expansion prediction; Achieved
-90% dice score for segmentation and 75 % accuracy of hematoma expansion prediction
+        - Participated and led a brain hematoma expansion prediction project, including designing pipelines for data collection and annotation
+        - Designed and built deep learning models for hematoma segmentation and expansion prediction; Achieved 90% dice score for segmentation and 75 % accuracy of hematoma expansion prediction
 
     - title: Product Engineer
       institution: Micron Semiconductor Asia Pte Ltd
@@ -57,7 +55,7 @@ data collection and annotation
     - year: 2010
       items: 
         - Singapore MOE Senior Middle School (SM3) Scholarship
-        
+
 - title: Academic Service
   type: list
   contents:
