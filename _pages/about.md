@@ -19,6 +19,8 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 I am a Ph.D. student of Computer Science at Nanyang Technological University (NTU) supervised by [Prof. Shijian Lu](https://sg-vilab.github.io). I’m under the [Indistrial Post-Graduate Program (IPP)](https://www.ntu.edu.sg/alibaba-ntu-jri/programmes), which is a joint program between Alibaba and NTU supported by Singapore Economic Development Board (EDB).
+
 Before that, I obtained my B.E. degree in Electrical & Electronic Engineering at NTU, and my M.S. degree in Computer Science at National University of Singapore (NUS).
+
 My research interests include computer vision and machine learning, specifically for image synthesis.
 
