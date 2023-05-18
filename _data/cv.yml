@@ -57,7 +57,7 @@
         - Singapore MOE Senior Middle School (SM3) Scholarship
 
 - title: Academic Service
-  type: list
+  type: nested_list
   contents:
     - title: Conference & Journal Reviewer
       items:
@@ -65,7 +65,7 @@
         - TCSVT, Neurocomputing
 
 - title: Teaching Experience
-  type: list
+  type: nested_list
   contents:
     - title: Teaching Assistant
       items:
