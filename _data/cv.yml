@@ -29,10 +29,11 @@
   type: time_table
   contents:
     - title: Research Scientist
-        institution: Tiktok Pte Ltd
-        year: 2023 - Present
-        description:
-          - Developing MLLM (Multimodal Large Language Model) for content moderation
+      institution: Tiktok Pte Ltd
+      year: 2023 - Present
+      description:
+        - Developing MLLM (Multimodal Large Language Model) for content moderation
+        
     - title: Research Engineer
       institution: Hanalytics Pte Ltd
       year: 2018 - 2020
