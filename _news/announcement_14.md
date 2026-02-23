@@ -7,4 +7,4 @@ related_posts: false
 <!-- <span style="color:red;font-weight:bold;">
 [Hiring!]
 </span> -->
-Two paper were accecpted by ICCV 2025.
+Two paper [Timeexpert](https://mwxely.github.io/projects/yang2025time/index) and [VTG](https://mwxely.github.io/projects/yang2025vtg/index) were accecpted by ICCV 2025.

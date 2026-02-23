@@ -7,4 +7,4 @@ related_posts: false
 <!-- <span style="color:red;font-weight:bold;">
 [Hiring!]
 </span> -->
-Two papers were accecpted by CVPR 2026.
+Two papers [CodeDance](https://codedance-vl.github.io/) and [ThinkGen](https://github.com/jiaosiyuu/ThinkGen) were accecpted by CVPR 2026.

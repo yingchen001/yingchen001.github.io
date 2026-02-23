@@ -7,4 +7,4 @@ related_posts: false
 <!-- <span style="color:red;font-weight:bold;">
 [Hiring!]
 </span> -->
-One paper was accecpted by NeurIPS 2025.
+Our paper [GUI-Rise](https://leon022.github.io/GUI-Rise/) was accecpted by NeurIPS 2025.

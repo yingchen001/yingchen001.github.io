@@ -7,4 +7,4 @@ related_posts: false
 <!-- <span style="color:red;font-weight:bold;">
 [Hiring!]
 </span> -->
-One paper was accecpted by ICLR 2026.
+Our paper [RoSE](https://arxiv.org/abs/2602.09929) was accecpted by ICLR 2026 as **oral presentation**.
