@@ -22,4 +22,5 @@ end
 group :other_plugins do
     gem 'feedjira'
     gem 'httparty'
+    gem 'ostruct'  # no longer a default gem since Ruby 4.0
 end
