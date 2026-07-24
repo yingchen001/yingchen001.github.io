@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle: Visual Generation · MLLMs · GUI Agents
 
 profile:
   align: right
@@ -18,9 +18,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am currently a Research Scientist @ TikTok/ByteDance, Singapore. Prior to this, I received my Ph.D. in Computer Science from Nanyang Technological University (NTU), supervised by [Prof. Shijian Lu](https://sg-vilab.github.io). I was under the [Indistrial Post-Graduate Program (IPP)](https://www.ntu.edu.sg/alibaba-ntu-jri/programmes), which is a joint program between Alibaba and NTU supported by Singapore Economic Development Board (EDB).
+I was a Research Scientist @ TikTok/ByteDance, Singapore. I received my Ph.D. in Computer Science from Nanyang Technological University (NTU), supervised by [Prof. Shijian Lu](https://sg-vilab.github.io), under the Alibaba–NTU [Industrial Postgraduate Programme (IPP)](https://www.ntu.edu.sg/alibaba-ntu-jri/programmes).
 
 Before that, I obtained my B.E. degree in Electrical & Electronic Engineering at NTU, and my M.S. degree in Computer Science at National University of Singapore (NUS).
 
-My research interests include computer vision and machine learning, specifically for image synthesis.
+My research interests focus on visual generation, multimodal large language models (MLLMs), and GUI agents.
 
