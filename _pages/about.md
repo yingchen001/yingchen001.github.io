@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Visual Generation · MLLMs · GUI Agents
+subtitle: 
 
 profile:
   align: right
