@@ -266,18 +266,15 @@ One paper was accecpted by TMM.
         <div class="author">
         
 
-        Kai Zeng, Moran Li, Zhengwei Wang, <em>Yingchen Yu†</em>, Yiheng Lin, and
+        Kai Zeng, Moran Li, Zhengwei Wang, <em>Yingchen Yu<sup>†</sup></em>, Yiheng Lin, and
           <span class="more-authors" title="click to view 4 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '4 more authors' ? 'Ruichuan An, Ming Lu, Qi She, Wentao Zhang†' : '4 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
+                if (element.html() == '4 more authors') {
+                  element.html('Ruichuan An, Ming Lu, Qi She, Wentao Zhang&lt;sup&gt;†&lt;/sup&gt;');
+                } else {
+                  element.html('4 more authors');
+                }
               ">4 more authors</span>
 </div>
 
@@ -337,14 +334,11 @@ One paper was accecpted by TMM.
           <span class="more-authors" title="click to view 4 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '4 more authors' ? 'Qian Zheng, Chang Liu, Xudong Jiang, Song Bai' : '4 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
+                if (element.html() == '4 more authors') {
+                  element.html('Qian Zheng, Chang Liu, Xudong Jiang, Song Bai');
+                } else {
+                  element.html('4 more authors');
+                }
               ">4 more authors</span>
 </div>
 
@@ -459,14 +453,11 @@ One paper was accecpted by TMM.
           <span class="more-authors" title="click to view 1 more author" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'Bai Song' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
+                if (element.html() == '1 more author') {
+                  element.html('Bai Song');
+                } else {
+                  element.html('1 more author');
+                }
               ">1 more author</span>
 </div>
 
@@ -527,14 +518,11 @@ One paper was accecpted by TMM.
           <span class="more-authors" title="click to view 2 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '2 more authors' ? 'Xuansong Xie, Chunyan Miao' : '2 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
+                if (element.html() == '2 more authors') {
+                  element.html('Xuansong Xie, Chunyan Miao');
+                } else {
+                  element.html('2 more authors');
+                }
               ">2 more authors</span>
 </div>
 
@@ -594,14 +582,11 @@ One paper was accecpted by TMM.
           <span class="more-authors" title="click to view 4 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '4 more authors' ? 'Lingjie Liu, Adam Kortylewski, Christian Theobalt, Eric Xing' : '4 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
+                if (element.html() == '4 more authors') {
+                  element.html('Lingjie Liu, Adam Kortylewski, Christian Theobalt, Eric Xing');
+                } else {
+                  element.html('4 more authors');
+                }
               ">4 more authors</span>
 </div>
 
@@ -664,14 +649,11 @@ One paper was accecpted by TMM.
           <span class="more-authors" title="click to view 3 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '3 more authors' ? 'Aoran Xiao, Shijian Lu, Chunyan Miao' : '3 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
+                if (element.html() == '3 more authors') {
+                  element.html('Aoran Xiao, Shijian Lu, Chunyan Miao');
+                } else {
+                  element.html('3 more authors');
+                }
               ">3 more authors</span>
 </div>
 
@@ -733,14 +715,11 @@ One paper was accecpted by TMM.
           <span class="more-authors" title="click to view 4 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '4 more authors' ? 'Miaomiao Cui, Xuansong Xie, Xian-Sheng Hua, Chunyan Miao' : '4 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
+                if (element.html() == '4 more authors') {
+                  element.html('Miaomiao Cui, Xuansong Xie, Xian-Sheng Hua, Chunyan Miao');
+                } else {
+                  element.html('4 more authors');
+                }
               ">4 more authors</span>
 </div>
 
@@ -802,14 +781,11 @@ One paper was accecpted by TMM.
           <span class="more-authors" title="click to view 2 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '2 more authors' ? 'Xuansong Xie, Chunyan Miao' : '2 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
+                if (element.html() == '2 more authors') {
+                  element.html('Xuansong Xie, Chunyan Miao');
+                } else {
+                  element.html('2 more authors');
+                }
               ">2 more authors</span>
 </div>
 
@@ -871,14 +847,11 @@ One paper was accecpted by TMM.
           <span class="more-authors" title="click to view 4 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '4 more authors' ? 'Shijian Lu, Feiying Ma, Xuansong Xie, Chunyan Miao' : '4 more authors';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
+                if (element.html() == '4 more authors') {
+                  element.html('Shijian Lu, Feiying Ma, Xuansong Xie, Chunyan Miao');
+                } else {
+                  element.html('4 more authors');
+                }
               ">4 more authors</span>
 </div>
 
