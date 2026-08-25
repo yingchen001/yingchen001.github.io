@@ -51,7 +51,7 @@ p {
 // Cap the measure for running prose only. Inside the publication list and other
 // grid components the container already constrains the line length.
 article > .clearfix p {
-  max-width: 68ch;
+  max-width: 60ch;
 }
 
 small,
@@ -147,11 +147,11 @@ hr {
 }
 
 .profile.float-right {
-  margin-left: var(--sp-6);
+  margin-left: var(--sp-8);
 }
 
 .profile.float-left {
-  margin-right: var(--sp-6);
+  margin-right: var(--sp-8);
 }
 
 // Below ~576px a float leaves a column too narrow to read, so stack instead.
@@ -166,9 +166,9 @@ hr {
   }
 }
 
-@media (min-width: 576px) { .profile { width: 34%; } }
-@media (min-width: 768px) { .profile { width: 30%; } }
-@media (min-width: 992px) { .profile { width: 27%; } }
+@media (min-width: 576px) { .profile { width: 27%; } }
+@media (min-width: 768px) { .profile { width: 24%; } }
+@media (min-width: 992px) { .profile { width: 21%; } }
 
 /* -----------------------------------------------------------------------------
  * Publications
@@ -234,8 +234,9 @@ hr {
     border-bottom: 0;
   }
 
-  // Thumbnails vary from 2.5:1 to 1.2:1; a fixed ratio is what makes the left
-  // rail read as tidy. The surface fill backstops the PNGs with alpha.
+  // Thumbnails vary from 2.5:1 to 1.2:1. Keep a fixed box so the left rail
+  // stays even, but `contain` rather than `cover` -- these are figures, so
+  // letterboxing is preferable to cropping content out of view.
   // Note `preview` is the class on both the column div and the img, so this is
   // scoped to img to avoid sizing the column.
   .preview {
@@ -247,10 +248,11 @@ hr {
       width: 100%;
       max-width: 100%;
       aspect-ratio: 4 / 3;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: var(--r-md);
       border: 1px solid var(--global-divider-color);
       background-color: var(--surface-1);
+      padding: var(--sp-2);
     }
   }
 
@@ -595,14 +597,19 @@ footer.sticky-bottom {
  * Social icons
  * -------------------------------------------------------------------------- */
 
-.social .contact-icons {
-  font-size: 1.4rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--sp-3);
-  justify-content: center;
+.social {
+  text-align: center;
 
-  a {
-    line-height: 1;
+  .contact-icons {
+    font-size: 1.35rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-3);
+    justify-content: center;
+    align-items: center;
+
+    a {
+      line-height: 1;
+    }
   }
 }

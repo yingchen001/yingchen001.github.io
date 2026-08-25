@@ -172,6 +172,12 @@
           {%- if entry.html %}
             <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
           {%- endif %}
+          {%- if entry.model %}
+            <a href="{{ entry.model }}" class="btn btn-sm z-depth-0" role="button">Model</a>
+          {%- endif %}
+          {%- if entry.data %}
+            <a href="{{ entry.data }}" class="btn btn-sm z-depth-0" role="button">Data</a>
+          {%- endif %}
           {%- if entry.pdf %}
             {% if entry.pdf contains '://' -%}
             <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>

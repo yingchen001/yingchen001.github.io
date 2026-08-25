@@ -30,10 +30,11 @@
   contents:
     - title: Research Scientist
       institution: Tiktok Pte Ltd
-      year: 2023 - Present
+      year: 2023 - 2026
       description:
-        - Developing MLLM (Multimodal Large Language Model) for content moderation
-        
+        - Built a multimodal agent that coordinates video, speech, and text-editing tools for automated content creation.
+        - Developed a production MLLM for ad understanding, achieving 30+ QPS and over 98% accuracy.
+        - Mentored AIGC research contributing to 7 publications, 2 ongoing submissions, and 9 patents.
     - title: Research Engineer
       institution: Hanalytics Pte Ltd
       year: 2018 - 2020
