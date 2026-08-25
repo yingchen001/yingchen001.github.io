@@ -1,0 +1,52 @@
+/*******************************************************************************
+ * Design tokens: typography, spacing, radius, motion.
+ * Colors live in _themes.scss so they can differ per theme; everything here is
+ * theme-independent.
+ ******************************************************************************/
+
+:root {
+  // Font stacks. Newsreader/Inter are loaded in _includes/head.html.
+  --font-serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  // Type scale (root 16px). Body is 17px to suit the 960px measure.
+  --fs-xs: 0.75rem;      --lh-xs: 1.5;     // badges, eyebrow labels
+  --fs-sm: 0.875rem;     --lh-sm: 1.55;    // authors, meta, captions
+  --fs-base: 1.0625rem;  --lh-base: 1.65;  // body
+  --fs-lg: 1.1875rem;    --lh-lg: 1.45;    // publication titles, lead
+  --fs-h3: 1.375rem;     --lh-h3: 1.3;
+  --fs-h2: 1.75rem;      --lh-h2: 1.25;
+  --fs-h1: 2.5rem;       --lh-h1: 1.15;
+
+  --ls-tight: -0.015em;  // serif at display sizes
+  --ls-wide: 0.045em;    // uppercase badges and labels
+
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semi: 600;
+
+  // Spacing, 4px base.
+  --sp-1: 0.25rem;  --sp-2: 0.5rem;  --sp-3: 0.75rem;  --sp-4: 1rem;
+  --sp-5: 1.5rem;   --sp-6: 2rem;    --sp-7: 3rem;     --sp-8: 4rem;
+
+  --r-sm: 4px;  --r-md: 6px;  --r-lg: 10px;  --r-full: 999px;
+
+  // Navbar height. progressBar.html also writes body padding-top inline from
+  // the measured navbar height, so this must match what actually renders or
+  // there is a one-frame jump on load.
+  --nav-h: 60px;
+
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur: 160ms;
+}
+
+// 2.5rem h1 overflows at 390px.
+@media (max-width: 575.98px) {
+  :root {
+    --fs-h1: 1.875rem;
+    --fs-h2: 1.375rem;
+    --fs-h3: 1.1875rem;
+    --fs-base: 1rem;
+  }
+}

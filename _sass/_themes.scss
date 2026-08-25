@@ -3,19 +3,38 @@
  ******************************************************************************/
 
 :root {
+  // Surfaces
   --global-bg-color: #{$white-color};
-  --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$blue-color};
-  --global-hover-color: #{$blue-color};
+  --surface-1: #F7F8FA;
+  --surface-2: #EFF1F4;
+
+  // Text. Ratios against #FFFFFF.
+  --global-text-color: #16181D;        // 17.8:1
+  --global-text-color-light: #5B6472;  //  6.0:1  authors, meta
+  --text-faint: #6B7280;               //  4.8:1  years, captions
+
+  // Accent
+  --global-theme-color: #1B5FBF;       //  6.1:1
+  --global-hover-color: #0F4FA8;       //  7.8:1
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
-  --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0,0,0,.1);
+  --accent-wash: rgba(27, 95, 191, 0.08);
+
+  // Lines
+  --global-divider-color: #E4E7EB;
+  --divider-strong: #D5D9DF;
+
+  // Footer is now sticky-bottom, so it sits on the page background rather
+  // than being a dark bar pinned over the content.
+  --global-footer-bg-color: transparent;
+  --global-footer-text-color: #6B7280;
+  --global-footer-link-color: #16181D;
+
+  --nav-bg: rgba(255, 255, 255, 0.82);
   --global-card-bg-color: #{$white-color};
+  --global-code-bg-color: #F5F6F8;
+  --global-distill-app-color: #6B7280;
+  --shadow-1: 0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 3px rgba(16, 24, 40, 0.06);
+  --shadow-2: 0 4px 12px rgba(16, 24, 40, 0.08);
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -48,19 +67,34 @@
 }
 
 html[data-theme='dark'] {
-  --global-bg-color: #{$grey-color-dark};
-  --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
-  --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
+  --global-bg-color: #121316;
+  --surface-1: #191B1F;
+  --surface-2: #22252B;
+
+  // Text. Ratios against #121316. The light tier used to be identical to the
+  // body color, which left dark mode with no muted text at all.
+  --global-text-color: #E6E8EC;        // 15.1:1
+  --global-text-color-light: #A0A6B0;  //  7.6:1
+  --text-faint: #767D89;               //  4.5:1
+
+  --global-theme-color: #7FB4F5;       //  8.6:1  (was #2698BA at 5.1:1)
+  --global-hover-color: #A5CBFA;       // 11.1:1
+  --global-hover-text-color: #121316;  // dropdown hover fills with hover-color
+  --accent-wash: rgba(127, 180, 245, 0.12);
+
+  --global-divider-color: #2B2E35;
+  --divider-strong: #3F444E;
+
+  --global-footer-bg-color: transparent;
+  --global-footer-text-color: #767D89;
+  --global-footer-link-color: #E6E8EC;
+
+  --nav-bg: rgba(18, 19, 22, 0.80);
+  --global-card-bg-color: #191B1F;
+  --global-code-bg-color: #1B1E24;
+  --global-distill-app-color: #A0A6B0;
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-2: 0 4px 14px rgba(0, 0, 0, 0.5);
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;

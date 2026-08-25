@@ -1,0 +1,608 @@
+/*******************************************************************************
+ * Components. Loaded after _base.scss so plain rules here win on source order,
+ * and after the Bootstrap/MDBootstrap CDN links in _includes/head.html so we
+ * override those without !important -- except where MDB used !important itself.
+ ******************************************************************************/
+
+/* -----------------------------------------------------------------------------
+ * Typography
+ * -------------------------------------------------------------------------- */
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
+  font-weight: var(--fw-normal); // MDB sets 300
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.card-title {
+  font-family: var(--font-serif);
+  font-weight: var(--fw-semi);
+  letter-spacing: var(--ls-tight);
+  text-wrap: balance;
+}
+
+h1, .post-title {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  margin: 0 0 var(--sp-3);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  margin: var(--sp-7) 0 var(--sp-4);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  margin: var(--sp-6) 0 var(--sp-3);
+}
+
+p {
+  margin: 0 0 var(--sp-4);
+}
+
+// Cap the measure for running prose only. Inside the publication list and other
+// grid components the container already constrains the line length.
+article > .clearfix p {
+  max-width: 68ch;
+}
+
+small,
+.caption,
+.post-meta,
+.post-description {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  color: var(--global-text-color-light);
+}
+
+code, pre {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+// Replaces the old `max-width: 90vw`, which fought the container.
+figure, img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  transition: color var(--dur) var(--ease);
+}
+
+hr {
+  border-top: 1px solid var(--global-divider-color);
+  margin: var(--sp-6) 0;
+}
+
+/* -----------------------------------------------------------------------------
+ * Navbar
+ * -------------------------------------------------------------------------- */
+
+.navbar {
+  min-height: var(--nav-h);
+  padding-top: var(--sp-2);
+  padding-bottom: var(--sp-2);
+  background-color: var(--nav-bg);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--global-divider-color);
+  box-shadow: none;
+  opacity: 1;
+
+  .navbar-brand {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    letter-spacing: var(--ls-tight);
+  }
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .navbar {
+    background-color: var(--global-bg-color);
+  }
+}
+
+.navbar.navbar-light .navbar-nav .nav-item .nav-link {
+  font-size: var(--fs-sm);
+  padding: var(--sp-2) var(--sp-3);
+}
+
+/* -----------------------------------------------------------------------------
+ * Profile
+ * -------------------------------------------------------------------------- */
+
+.profile {
+  width: 100%;
+  margin-bottom: var(--sp-5);
+
+  img {
+    width: 100%;
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-1);
+  }
+
+  .address {
+    font-family: var(--font-mono);
+    font-size: var(--fs-xs);
+    color: var(--global-text-color-light);
+    margin: var(--sp-3) 0 0;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .social {
+    margin-top: var(--sp-3);
+  }
+}
+
+.profile.float-right {
+  margin-left: var(--sp-6);
+}
+
+.profile.float-left {
+  margin-right: var(--sp-6);
+}
+
+// Below ~576px a float leaves a column too narrow to read, so stack instead.
+// _layouts/about.html writes `class="profile float-right"` and Bootstrap's
+// .float-* utilities are already !important, hence the override.
+@media (max-width: 575.98px) {
+  .profile.float-left,
+  .profile.float-right {
+    float: none !important;
+    max-width: 220px;
+    margin: 0 auto var(--sp-5);
+  }
+}
+
+@media (min-width: 576px) { .profile { width: 34%; } }
+@media (min-width: 768px) { .profile { width: 30%; } }
+@media (min-width: 992px) { .profile { width: 27%; } }
+
+/* -----------------------------------------------------------------------------
+ * Publications
+ * -------------------------------------------------------------------------- */
+
+.publications {
+  margin-top: var(--sp-6);
+
+  h1 {
+    font-size: var(--fs-h1);
+    text-align: left;
+    margin-bottom: var(--sp-5);
+  }
+
+  // Year rules. Previously coloured with the divider token (1.2:1, invisible)
+  // and pulled back up with margin-bottom: -2rem.
+  h2.year {
+    font-family: var(--font-sans);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semi);
+    letter-spacing: var(--ls-wide);
+    text-transform: uppercase;
+    color: var(--text-faint);
+    text-align: left;
+    border-top: 1px solid var(--divider-strong);
+    padding-top: var(--sp-3);
+    margin: var(--sp-7) 0 0;
+  }
+
+  ol.bibliography {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    > li {
+      margin: 0;
+    }
+  }
+
+  // Zero Bootstrap's -15px row margins and the matching column gutters, then
+  // reintroduce the gap explicitly on the text column. The default gutters
+  // would otherwise misalign these rows against the surrounding prose, since
+  // they are nested inside .post rather than directly in .container.
+  .row {
+    align-items: start;
+    margin-left: 0;
+    margin-right: 0;
+    padding: var(--sp-5) 0;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .row > [class^="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 0;
+  }
+
+  .row > .col-sm-9 {
+    padding-left: var(--sp-5);
+  }
+
+  ol.bibliography > li:last-child .row {
+    border-bottom: 0;
+  }
+
+  // Thumbnails vary from 2.5:1 to 1.2:1; a fixed ratio is what makes the left
+  // rail read as tidy. The surface fill backstops the PNGs with alpha.
+  // Note `preview` is the class on both the column div and the img, so this is
+  // scoped to img to avoid sizing the column.
+  .preview {
+    figure {
+      margin: 0;
+    }
+
+    img.preview {
+      width: 100%;
+      max-width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: var(--r-md);
+      border: 1px solid var(--global-divider-color);
+      background-color: var(--surface-1);
+    }
+  }
+
+  .title {
+    font-family: var(--font-serif);
+    font-size: var(--fs-lg);
+    line-height: var(--lh-lg);
+    font-weight: var(--fw-semi);
+    letter-spacing: var(--ls-tight);
+    margin-bottom: var(--sp-2);
+    // Long unbroken tokens ("Language-Image", arXiv ids) would otherwise push
+    // the flex column wider than the viewport on narrow screens.
+    overflow-wrap: break-word;
+  }
+
+  .author {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--global-text-color-light);
+    margin-bottom: var(--sp-2);
+
+    // Self-citation: weight, not a border.
+    > em {
+      font-style: normal;
+      font-weight: var(--fw-semi);
+      color: var(--global-text-color);
+      border-bottom: 0;
+    }
+
+    a {
+      color: inherit;
+      border-bottom: 1px solid var(--global-divider-color);
+
+      &:hover {
+        color: var(--global-theme-color);
+        border-bottom-color: var(--global-theme-color);
+        text-decoration: none;
+      }
+    }
+
+    > span.more-authors {
+      color: var(--text-faint);
+      border-bottom: 1px dashed var(--text-faint);
+      cursor: pointer;
+
+      &:hover {
+        color: var(--global-text-color);
+        border-bottom-color: var(--global-text-color);
+      }
+    }
+  }
+
+  // Long venue strings, de-emphasised now that the badge carries the signal.
+  .periodical {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--text-faint);
+
+    em {
+      font-style: normal;
+      color: inherit;
+    }
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  .venue {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-2);
+    margin-bottom: var(--sp-3);
+  }
+
+  // MDB forces .badge{color:#fff!important} and adds a box-shadow.
+  abbr.badge {
+    box-shadow: none !important;
+    border-radius: var(--r-sm);
+    padding: 0.3em 0.6em;
+    font-family: var(--font-sans);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-semi);
+    letter-spacing: var(--ls-wide);
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 0;
+    background-color: var(--global-theme-color);
+
+    a,
+    a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  abbr.badge.award {
+    background-color: transparent !important;
+    color: var(--global-theme-color) !important;
+    border: 1px solid var(--global-theme-color);
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    margin-top: var(--sp-3);
+
+    a.btn {
+      margin: 0 !important;        // MDB sets .btn{margin:.375rem}
+      box-shadow: none !important;
+      text-transform: none;       // MDB uppercases button text
+      font-family: var(--font-sans);
+      font-size: var(--fs-xs);
+      font-weight: var(--fw-medium);
+      letter-spacing: 0;
+      line-height: 1.4;
+      padding: 0.32rem 0.66rem;
+      border-radius: var(--r-sm);
+      border: 1px solid var(--global-divider-color);
+      color: var(--global-text-color-light);
+      background-color: transparent;
+      transition: color var(--dur) var(--ease),
+                  border-color var(--dur) var(--ease),
+                  background-color var(--dur) var(--ease);
+
+      &:hover {
+        color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+        background-color: var(--accent-wash);
+      }
+    }
+  }
+
+  // Altmetric / Dimensions embeds, ported from _base.scss.
+  .badges {
+    padding-bottom: var(--sp-2);
+
+    span {
+      display: inline-block;
+      height: 100%;
+      padding-right: var(--sp-2);
+      vertical-align: middle;
+    }
+  }
+
+  // Abs/Bib expanders. common.js toggles .open; the max-height transition is
+  // the whole mechanism, so these rules are load-bearing.
+  .hidden {
+    font-size: var(--fs-sm);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.15s ease;
+
+    p {
+      line-height: var(--lh-sm);
+      margin: var(--sp-3);
+    }
+
+    pre {
+      font-size: 1em;
+      line-height: 1.4em;
+      padding: var(--sp-3);
+    }
+  }
+
+  .hidden.open {
+    max-height: 100em;
+    transition: all 0.15s ease;
+  }
+
+  div.abstract.hidden {
+    border: 1px dashed transparent;
+    border-radius: var(--r-md);
+    margin-top: var(--sp-2);
+  }
+
+  div.abstract.hidden.open {
+    border-color: var(--global-divider-color);
+    background-color: var(--surface-1);
+  }
+}
+
+// Below 576px the col-sm-* classes stop applying, so the thumbnail and text
+// stack. Drop the text column's left gutter and cap the thumbnail so it reads
+// as a thumbnail rather than a full-bleed image.
+@media (max-width: 575.98px) {
+  .publications .row {
+    display: block;
+  }
+
+  .publications .row > .col-sm-9 {
+    padding-left: 0;
+  }
+
+  .publications .preview {
+    max-width: 260px;
+    margin-bottom: var(--sp-3);
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * News
+ * -------------------------------------------------------------------------- */
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: grid;
+    grid-template-columns: 5.5rem 1fr;
+    gap: var(--sp-4);
+    padding: var(--sp-3) 0;
+    border-bottom: 1px solid var(--global-divider-color);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+  }
+
+  li:last-child {
+    border-bottom: 0;
+  }
+
+  time {
+    font-variant-numeric: tabular-nums;
+    font-size: var(--fs-xs);
+    letter-spacing: var(--ls-wide);
+    text-transform: uppercase;
+    color: var(--text-faint);
+    padding-top: 0.15em;
+  }
+
+  .news-body p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .news-list li {
+    grid-template-columns: 1fr;
+    gap: var(--sp-1);
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * CV / experience
+ * -------------------------------------------------------------------------- */
+
+.cv {
+  margin-bottom: var(--sp-6);
+
+  // MDB gives .card a two-layer material shadow; a hairline reads calmer.
+  .card {
+    box-shadow: none !important;
+    border: 1px solid var(--global-divider-color);
+    border-radius: var(--r-lg);
+    background-color: var(--global-bg-color);
+  }
+
+  .card-title {
+    font-size: var(--fs-h3);
+    margin: 0 0 var(--sp-4);
+  }
+
+  .list-group-item {
+    border-color: var(--global-divider-color);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cv-item {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    gap: var(--sp-4);
+    align-items: baseline;
+  }
+
+  .cv-year {
+    font-family: var(--font-sans);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-semi);
+    letter-spacing: var(--ls-wide);
+    color: var(--text-faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .cv-title {
+    font-family: var(--font-sans);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-semi);
+    margin: 0;
+  }
+
+  .cv-institution {
+    font-size: var(--fs-sm);
+    color: var(--global-text-color-light);
+    margin: 0;
+  }
+
+  ul.items,
+  ul.subitems {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+    color: var(--global-text-color-light);
+    padding-left: var(--sp-4);
+    margin: var(--sp-2) 0 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cv .cv-item {
+    grid-template-columns: 1fr;
+    gap: var(--sp-1);
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Footer
+ * -------------------------------------------------------------------------- */
+
+footer.sticky-bottom {
+  border-top: 1px solid var(--global-divider-color);
+  padding: var(--sp-6) 0;
+  margin-top: var(--sp-8);
+  font-size: var(--fs-sm);
+  color: var(--global-footer-text-color);
+  background-color: transparent;
+
+  a {
+    color: var(--global-footer-link-color);
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Social icons
+ * -------------------------------------------------------------------------- */
+
+.social .contact-icons {
+  font-size: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  justify-content: center;
+
+  a {
+    line-height: 1;
+  }
+}

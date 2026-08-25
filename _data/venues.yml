@@ -1,6 +1,51 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# Venue abbreviations shown as badges next to each publication.
+# Colors are checked for >= 4.9:1 contrast against white text, because
+# MDBootstrap forces .badge { color: #fff !important }.
 
-"PhysRev":
-  url: https://journals.aps.org/
+"CVPR":
+  url: https://cvpr.thecvf.com/
+  color: "#1B5FBF"
+
+"ICCV":
+  url: https://iccv.thecvf.com/
+  color: "#0E7C86"
+
+"ECCV":
+  url: https://eccv.ecva.net/
+  color: "#B45309"
+
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#6D28D9"
+
+"ICLR":
+  url: https://iclr.cc/
+  color: "#166534"
+
+"AAAI":
+  url: https://aaai.org/conference/aaai/
+  color: "#1E40AF"
+
+"WACV":
+  url: https://wacv.thecvf.com/
+  color: "#0F766E"
+
+"ACM MM":
+  url: https://www.acmmm.org/
+  color: "#B91C1C"
+
+"TPAMI":
+  url: https://www.computer.org/csdl/journal/tp
+  color: "#9F1239"
+
+"TIP":
+  url: https://signalprocessingsociety.org/publications-resources/ieee-transactions-image-processing
+  color: "#7C2D12"
+
+"TMM":
+  url: https://www.computer.org/csdl/journal/mm
+  color: "#5B21B6"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#475569"
