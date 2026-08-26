@@ -27,7 +27,9 @@
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&amp;family=Inter:wght@400..700&amp;display=swap">
 
     <!-- Code Syntax Highlighting -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
@@ -52,7 +54,7 @@
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body class="fixed-top-nav sticky-bottom-footer">
 
     <!-- Header -->
     <header>
@@ -127,10 +129,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-3 preview">
+<figure>
+
+  <img src="/assets/img/publication_preview/SteerVTE.webp" class="preview z-depth-1 rounded" alt="SteerVTE.webp" loading="lazy" decoding="async">
+
+</figure>
+</div>
 
         <!-- Entry bib key -->
-        <div id="zeng2026steervte" class="col-sm-8">
+        <div id="zeng2026steervte" class="col-sm-9">
         <!-- Title -->
         <div class="title">SteerVTE: Seamless Video Text Editing with Style and Glyph Control</div>
         <!-- Author -->
@@ -149,7 +157,9 @@
               ">4 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#475569"><a href="https://arxiv.org/" rel="external nofollow noopener" target="_blank">arXiv</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -161,6 +171,11 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a href="http://arxiv.org/abs/2606.23254" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a href="https://huggingface.co/MewtwoX23/SteerVTE/tree/main" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Model</a>
+            <a href="https://huggingface.co/datasets/MewtwoX23/VTE-Bench" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Data</a>
+            <a href="https://github.com/zengkaiya/SteerVTE" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+            <a href="https://zengkaiya.github.io/SteerVTE/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
           </div>
           
           <div class="badges">
@@ -175,26 +190,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/TextSculptor-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/TextSculptor-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/TextSculptor-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/TextSculptor.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="TextSculptor.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/TextSculptor.webp" class="preview z-depth-1 rounded" alt="TextSculptor.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="lin2026textsculptor" class="col-sm-8">
+        <div id="lin2026textsculptor" class="col-sm-9">
         <!-- Title -->
         <div class="title">TextSculptor: Training and Benchmarking Scene Text Editing</div>
         <!-- Author -->
@@ -213,7 +218,9 @@
               ">6 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#475569"><a href="https://arxiv.org/" rel="external nofollow noopener" target="_blank">arXiv</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -240,26 +247,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/vitspeak-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/vitspeak-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/vitspeak-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/vitspeak.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="vitspeak.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/vitspeak.webp" class="preview z-depth-1 rounded" alt="vitspeak.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="fang2026let" class="col-sm-8">
+        <div id="fang2026let" class="col-sm-9">
         <!-- Title -->
         <div class="title">Let ViT Speak: Generative Language-Image Pre-training</div>
         <!-- Author -->
@@ -278,7 +275,9 @@
               ">5 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#475569"><a href="https://arxiv.org/" rel="external nofollow noopener" target="_blank">arXiv</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -305,26 +304,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/CodeDance-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/CodeDance-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/CodeDance-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/CodeDance.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="CodeDance.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/CodeDance.webp" class="preview z-depth-1 rounded" alt="CodeDance.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="song2025codedance" class="col-sm-8">
+        <div id="song2025codedance" class="col-sm-9">
         <!-- Title -->
         <div class="title">CodeDance: A Dynamic Tool-integrated MLLM for Executable Visual Reasoning</div>
         <!-- Author -->
@@ -343,7 +332,9 @@
               ">4 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#1B5FBF"><a href="https://cvpr.thecvf.com/" rel="external nofollow noopener" target="_blank">CVPR</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -370,26 +361,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/ThinkGen-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/ThinkGen-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/ThinkGen-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/ThinkGen.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="ThinkGen.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/ThinkGen.webp" class="preview z-depth-1 rounded" alt="ThinkGen.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="jiao2025thinkgen" class="col-sm-8">
+        <div id="jiao2025thinkgen" class="col-sm-9">
         <!-- Title -->
         <div class="title">ThinkGen: Generalized Thinking for Visual Generation</div>
         <!-- Author -->
@@ -408,7 +389,9 @@
               ">6 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#1B5FBF"><a href="https://cvpr.thecvf.com/" rel="external nofollow noopener" target="_blank">CVPR</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -435,26 +418,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/rose-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/rose-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/rose-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/rose.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="rose.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/rose.webp" class="preview z-depth-1 rounded" alt="rose.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="li2026rose" class="col-sm-8">
+        <div id="li2026rose" class="col-sm-9">
         <!-- Title -->
         <div class="title">Monocular Normal Estimation via Shading Sequence Estimation</div>
         <!-- Author -->
@@ -473,11 +446,15 @@
               ">4 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue">
+<abbr class="badge" style="background-color:#166534"><a href="https://iclr.cc/" rel="external nofollow noopener" target="_blank">ICLR</a></abbr><abbr class="badge award">Oral</abbr>
+</div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In International Conference on Learning Representations (ICLR), Oral</em>, 2026
+          <em>In International Conference on Learning Representations (ICLR)</em>, 2026
         </div>
         <div class="periodical">
           
@@ -503,26 +480,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/Versatile-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/Versatile-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/Versatile-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/Versatile.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="Versatile.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/Versatile.webp" class="preview z-depth-1 rounded" alt="Versatile.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="yang2025versatile" class="col-sm-8">
+        <div id="yang2025versatile" class="col-sm-9">
         <!-- Title -->
         <div class="title">Versatile transition generation with image-to-video diffusion</div>
         <!-- Author -->
@@ -531,7 +498,9 @@
 
         Zuhao Yang, Jiahui Zhang, <em>Yingchen Yu</em>, Shijian Lu, and Song Bai</div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#0E7C86"><a href="https://iccv.thecvf.com/" rel="external nofollow noopener" target="_blank">ICCV</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -558,26 +527,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/Timeexpert-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/Timeexpert-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/Timeexpert-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/Timeexpert.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="Timeexpert.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/Timeexpert.webp" class="preview z-depth-1 rounded" alt="Timeexpert.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="yang2025timeexpert" class="col-sm-8">
+        <div id="yang2025timeexpert" class="col-sm-9">
         <!-- Title -->
         <div class="title">Timeexpert: An expert-guided video llm for video temporal grounding</div>
         <!-- Author -->
@@ -586,7 +545,9 @@
 
         Zuhao Yang, <em>Yingchen Yu</em>, Yunqing Zhao, Shijian Lu, and Song Bai</div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#0E7C86"><a href="https://iccv.thecvf.com/" rel="external nofollow noopener" target="_blank">ICCV</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -613,26 +574,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/FLASH-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/FLASH-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/FLASH-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/FLASH.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="FLASH.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/FLASH.webp" class="preview z-depth-1 rounded" alt="FLASH.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="li2025learning" class="col-sm-8">
+        <div id="li2025learning" class="col-sm-9">
         <!-- Title -->
         <div class="title">Learning to Animate Images from A Few Videos to Portray Delicate Human Actions</div>
         <!-- Author -->
@@ -651,7 +602,9 @@
               ">1 more author</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#0F766E"><a href="https://wacv.thecvf.com/" rel="external nofollow noopener" target="_blank">WACV</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -679,26 +632,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/textseg++-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/textseg++-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/textseg++-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/textseg++.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="textseg++.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/textseg++.webp" class="preview z-depth-1 rounded" alt="textseg++.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="lan2025text4seg++" class="col-sm-8">
+        <div id="lan2025text4seg++" class="col-sm-9">
         <!-- Title -->
         <div class="title">Text4seg++: Advancing image segmentation via generative language modeling</div>
         <!-- Author -->
@@ -717,7 +660,9 @@
               ">4 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#475569"><a href="https://arxiv.org/" rel="external nofollow noopener" target="_blank">arXiv</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -744,26 +689,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/GUI-Rise-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/GUI-Rise-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/GUI-Rise-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/GUI-Rise.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="GUI-Rise.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/GUI-Rise.webp" class="preview z-depth-1 rounded" alt="GUI-Rise.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="liu2025gui" class="col-sm-8">
+        <div id="liu2025gui" class="col-sm-9">
         <!-- Title -->
         <div class="title">GUI-Rise: Structured Reasoning and History Summarization for GUI Navigation</div>
         <!-- Author -->
@@ -782,7 +717,9 @@
               ">1 more author</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#6D28D9"><a href="https://neurips.cc/" rel="external nofollow noopener" target="_blank">NeurIPS</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -812,26 +749,16 @@
   <ol class="bibliography"><li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/MorphNeRF-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/MorphNeRF-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/MorphNeRF-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/MorphNeRF.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="MorphNeRF.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/MorphNeRF.webp" class="preview z-depth-1 rounded" alt="MorphNeRF.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="yu2024morphnerf" class="col-sm-8">
+        <div id="yu2024morphnerf" class="col-sm-9">
         <!-- Title -->
         <div class="title">MorphNeRF: Text-Guided 3D-Aware Editing via Morphing Generative Neural Radiance Fields</div>
         <!-- Author -->
@@ -850,7 +777,9 @@
               ">2 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#5B21B6"><a href="https://www.computer.org/csdl/journal/mm" rel="external nofollow noopener" target="_blank">TMM</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -879,26 +808,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/MISE.gif-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/MISE.gif-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/MISE.gif-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/MISE.gif" class="preview z-depth-1 rounded" width="auto" height="auto" alt="MISE.gif" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/MISE.webp" class="preview z-depth-1 rounded" alt="MISE.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="zhan2021multimodal" class="col-sm-8">
+        <div id="zhan2021multimodal" class="col-sm-9">
         <!-- Title -->
         <div class="title">Multimodal image synthesis and editing: A survey</div>
         <!-- Author -->
@@ -917,7 +836,9 @@
               ">4 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#9F1239"><a href="https://www.computer.org/csdl/journal/tp" rel="external nofollow noopener" target="_blank">TPAMI</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -946,26 +867,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/stylerf.gif-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/stylerf.gif-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/stylerf.gif-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/stylerf.gif" class="preview z-depth-1 rounded" width="auto" height="auto" alt="stylerf.gif" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/stylerf.webp" class="preview z-depth-1 rounded" alt="stylerf.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="liu2023stylerf" class="col-sm-8">
+        <div id="liu2023stylerf" class="col-sm-9">
         <!-- Title -->
         <div class="title">StyleRF: Zero-shot 3D Style Transfer of Neural Radiance Fields</div>
         <!-- Author -->
@@ -984,7 +895,9 @@
               ">3 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#1B5FBF"><a href="https://cvpr.thecvf.com/" rel="external nofollow noopener" target="_blank">CVPR</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -1013,26 +926,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/kddl-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/kddl-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/kddl-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/kddl.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="kddl.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/kddl.webp" class="preview z-depth-1 rounded" alt="kddl.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="cui2023kd" class="col-sm-8">
+        <div id="cui2023kd" class="col-sm-9">
         <!-- Title -->
         <div class="title">KD-DLGAN: Data Limited Image Generation via Knowledge Distillation</div>
         <!-- Author -->
@@ -1051,7 +954,9 @@
               ">1 more author</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#1B5FBF"><a href="https://cvpr.thecvf.com/" rel="external nofollow noopener" target="_blank">CVPR</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -1078,26 +983,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/IR-NeRF-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/IR-NeRF-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/IR-NeRF-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/IR-NeRF.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="IR-NeRF.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/IR-NeRF.webp" class="preview z-depth-1 rounded" alt="IR-NeRF.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="zhang2023pose" class="col-sm-8">
+        <div id="zhang2023pose" class="col-sm-9">
         <!-- Title -->
         <div class="title">Pose-Free Neural Radiance Fields via Implicit Pose Regularization</div>
         <!-- Author -->
@@ -1116,7 +1011,9 @@
               ">3 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#0E7C86"><a href="https://iccv.thecvf.com/" rel="external nofollow noopener" target="_blank">ICCV</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -1143,26 +1040,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/WaveNeRF-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/WaveNeRF-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/WaveNeRF-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/WaveNeRF.jpg" class="preview z-depth-1 rounded" width="auto" height="auto" alt="WaveNeRF.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/WaveNeRF.webp" class="preview z-depth-1 rounded" alt="WaveNeRF.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="xu2023wavenerf" class="col-sm-8">
+        <div id="xu2023wavenerf" class="col-sm-9">
         <!-- Title -->
         <div class="title">Wavenerf: Wavelet-based generalizable neural radiance fields</div>
         <!-- Author -->
@@ -1181,7 +1068,9 @@
               ">3 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#0E7C86"><a href="https://iccv.thecvf.com/" rel="external nofollow noopener" target="_blank">ICCV</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -1208,26 +1097,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/3D-OVS.gif-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/3D-OVS.gif-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/3D-OVS.gif-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/3D-OVS.gif" class="preview z-depth-1 rounded" width="auto" height="auto" alt="3D-OVS.gif" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/3D-OVS.webp" class="preview z-depth-1 rounded" alt="3D-OVS.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="liu2023weakly" class="col-sm-8">
+        <div id="liu2023weakly" class="col-sm-9">
         <!-- Title -->
         <div class="title">Weakly supervised 3d open-vocabulary segmentation</div>
         <!-- Author -->
@@ -1246,7 +1125,9 @@
               ">4 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#6D28D9"><a href="https://neurips.cc/" rel="external nofollow noopener" target="_blank">NeurIPS</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -1277,26 +1158,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/SAM-DETR-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/SAM-DETR-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/SAM-DETR-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/SAM-DETR.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="SAM-DETR.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/SAM-DETR.webp" class="preview z-depth-1 rounded" alt="SAM-DETR.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="zhang2022accelerating" class="col-sm-8">
+        <div id="zhang2022accelerating" class="col-sm-9">
         <!-- Title -->
         <div class="title">Accelerating DETR convergence via semantic-aligned matching</div>
         <!-- Author -->
@@ -1305,7 +1176,9 @@
 
         Gongjie Zhang, Zhipeng Luo, <em>Yingchen Yu</em>, Kaiwen Cui, and Shijian Lu</div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#1B5FBF"><a href="https://cvpr.thecvf.com/" rel="external nofollow noopener" target="_blank">CVPR</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -1333,26 +1206,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/MoNCE-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/MoNCE-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/MoNCE-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/MoNCE.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="MoNCE.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/MoNCE.webp" class="preview z-depth-1 rounded" alt="MoNCE.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="zhan2022modulated" class="col-sm-8">
+        <div id="zhan2022modulated" class="col-sm-9">
         <!-- Title -->
         <div class="title">Modulated contrast for versatile image synthesis</div>
         <!-- Author -->
@@ -1361,7 +1224,9 @@
 
         Fangneng Zhan, Jiahui Zhang, <em>Yingchen Yu</em>, Rongliang Wu, and Shijian Lu</div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#1B5FBF"><a href="https://cvpr.thecvf.com/" rel="external nofollow noopener" target="_blank">CVPR</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -1389,26 +1254,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/MCL-Net-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/MCL-Net-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/MCL-Net-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/MCL-Net.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="MCL-Net.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/MCL-Net.webp" class="preview z-depth-1 rounded" alt="MCL-Net.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="zhan2022marginal" class="col-sm-8">
+        <div id="zhan2022marginal" class="col-sm-9">
         <!-- Title -->
         <div class="title">Marginal contrastive correspondence for guided image generation</div>
         <!-- Author -->
@@ -1427,7 +1282,9 @@
               ">1 more author</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#1B5FBF"><a href="https://cvpr.thecvf.com/" rel="external nofollow noopener" target="_blank">CVPR</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -1455,26 +1312,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/VMRF-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/VMRF-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/VMRF-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/VMRF.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="VMRF.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/VMRF.webp" class="preview z-depth-1 rounded" alt="VMRF.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="zhang2022vmrf" class="col-sm-8">
+        <div id="zhang2022vmrf" class="col-sm-9">
         <!-- Title -->
         <div class="title">VMRF: View Matching Neural Radiance Fields</div>
         <!-- Author -->
@@ -1493,7 +1340,9 @@
               ">3 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#B91C1C"><a href="https://www.acmmm.org/" rel="external nofollow noopener" target="_blank">ACM MM</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -1520,26 +1369,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/IQVAE-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/IQVAE-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/IQVAE-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/IQVAE.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="IQVAE.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/IQVAE.webp" class="preview z-depth-1 rounded" alt="IQVAE.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="zhan2022auto" class="col-sm-8">
+        <div id="zhan2022auto" class="col-sm-9">
         <!-- Title -->
         <div class="title">Auto-regressive image synthesis with integrated quantization</div>
         <!-- Author -->
@@ -1558,7 +1397,9 @@
               ">2 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#B45309"><a href="https://eccv.ecva.net/" rel="external nofollow noopener" target="_blank">ECCV</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -1586,26 +1427,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/RABIT-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/RABIT-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/RABIT-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/RABIT.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="RABIT.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/RABIT.webp" class="preview z-depth-1 rounded" alt="RABIT.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="zhan2022bi" class="col-sm-8">
+        <div id="zhan2022bi" class="col-sm-9">
         <!-- Title -->
         <div class="title">Bi-level feature alignment for versatile image translation and manipulation</div>
         <!-- Author -->
@@ -1624,7 +1455,9 @@
               ">3 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#B45309"><a href="https://eccv.ecva.net/" rel="external nofollow noopener" target="_blank">ECCV</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -1652,26 +1485,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/CF-CLIP-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/CF-CLIP-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/CF-CLIP-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/CF-CLIP.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="CF-CLIP.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/CF-CLIP.webp" class="preview z-depth-1 rounded" alt="CF-CLIP.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="yu2022towards" class="col-sm-8">
+        <div id="yu2022towards" class="col-sm-9">
         <!-- Title -->
         <div class="title">Towards counterfactual image manipulation via clip</div>
         <!-- Author -->
@@ -1690,7 +1513,9 @@
               ">4 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#B91C1C"><a href="https://www.acmmm.org/" rel="external nofollow noopener" target="_blank">ACM MM</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -1718,26 +1543,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/gmlight-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/gmlight-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/gmlight-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/gmlight.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="gmlight.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/gmlight.webp" class="preview z-depth-1 rounded" alt="gmlight.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="zhan2022gmlight" class="col-sm-8">
+        <div id="zhan2022gmlight" class="col-sm-9">
         <!-- Title -->
         <div class="title">Gmlight: Lighting estimation via geometric distribution approximation</div>
         <!-- Author -->
@@ -1756,7 +1571,9 @@
               ">4 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#7C2D12"><a href="https://signalprocessingsociety.org/publications-resources/ieee-transactions-image-processing" rel="external nofollow noopener" target="_blank">TIP</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -1788,26 +1605,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/WaveFill-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/WaveFill-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/WaveFill-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/WaveFill.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="WaveFill.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/WaveFill.webp" class="preview z-depth-1 rounded" alt="WaveFill.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="yu2021wavefill" class="col-sm-8">
+        <div id="yu2021wavefill" class="col-sm-9">
         <!-- Title -->
         <div class="title">Wavefill: A wavelet-based generation network for image inpainting</div>
         <!-- Author -->
@@ -1826,11 +1633,15 @@
               ">2 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue">
+<abbr class="badge" style="background-color:#0E7C86"><a href="https://iccv.thecvf.com/" rel="external nofollow noopener" target="_blank">ICCV</a></abbr><abbr class="badge award">Oral</abbr>
+</div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In Proceedings of the IEEE/CVF international conference on computer vision (ICCV), Oral</em>, 2021
+          <em>In Proceedings of the IEEE/CVF international conference on computer vision (ICCV)</em>, 2021
         </div>
         <div class="periodical">
           
@@ -1854,26 +1665,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/BATFill-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/BATFill-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/BATFill-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/BATFill.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="BATFill.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/BATFill.webp" class="preview z-depth-1 rounded" alt="BATFill.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="yu2021diverse" class="col-sm-8">
+        <div id="yu2021diverse" class="col-sm-9">
         <!-- Title -->
         <div class="title">Diverse image inpainting with bidirectional and autoregressive transformers</div>
         <!-- Author -->
@@ -1892,11 +1693,15 @@
               ">4 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue">
+<abbr class="badge" style="background-color:#B91C1C"><a href="https://www.acmmm.org/" rel="external nofollow noopener" target="_blank">ACM MM</a></abbr><abbr class="badge award">Oral</abbr>
+</div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In Proceedings of the 29th ACM International Conference on Multimedia (ACM MM), Oral</em>, 2021
+          <em>In Proceedings of the 29th ACM International Conference on Multimedia (ACM MM)</em>, 2021
         </div>
         <div class="periodical">
           
@@ -1920,26 +1725,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/emlight-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/emlight-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/emlight-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/emlight.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="emlight.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/emlight.webp" class="preview z-depth-1 rounded" alt="emlight.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="zhan2021emlight" class="col-sm-8">
+        <div id="zhan2021emlight" class="col-sm-9">
         <!-- Title -->
         <div class="title">Emlight: Lighting estimation via spherical distribution approximation</div>
         <!-- Author -->
@@ -1958,7 +1753,9 @@
               ">2 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#1E40AF"><a href="https://aaai.org/conference/aaai/" rel="external nofollow noopener" target="_blank">AAAI</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -1986,26 +1783,16 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview">
+        <div class="col-sm-3 preview">
 <figure>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/UNITE-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/UNITE-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/UNITE-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/UNITE.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="UNITE.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
+  <img src="/assets/img/publication_preview/UNITE.webp" class="preview z-depth-1 rounded" alt="UNITE.webp" loading="lazy" decoding="async">
 
 </figure>
 </div>
 
         <!-- Entry bib key -->
-        <div id="zhan2021unbalanced" class="col-sm-8">
+        <div id="zhan2021unbalanced" class="col-sm-9">
         <!-- Title -->
         <div class="title">Unbalanced feature transport for exemplar-based image translation</div>
         <!-- Author -->
@@ -2024,7 +1811,9 @@
               ">5 more authors</span>
 </div>
 
-        <!-- Journal/Book title and date -->
+        <!-- Venue badge and award. Rendered here rather than in the thumbnail
+             column so it also shows for entries that have a preview image. --><div class="venue"><abbr class="badge" style="background-color:#1B5FBF"><a href="https://cvpr.thecvf.com/" rel="external nofollow noopener" target="_blank">CVPR</a></abbr></div>
+<!-- Journal/Book title and date -->
         
         
         <div class="periodical">
@@ -2061,9 +1850,8 @@
       
     </div>
 
-    <!-- Footer -->    
-    <footer class="fixed-bottom">
-      <div class="container mt-0">
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
         © Copyright 2026 Yingchen  Yu. Beginner
 
       </div>
