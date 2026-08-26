@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle: Research Scientist &nbsp;·&nbsp; Ph.D., Nanyang Technological University
 
 profile:
   align: right
@@ -19,8 +19,16 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 I was a Research Scientist @ TikTok/ByteDance, Singapore. I received my Ph.D. in Computer Science from Nanyang Technological University (NTU), supervised by [Prof. Shijian Lu](https://sg-vilab.github.io), under the Alibaba–NTU [Industrial Postgraduate Programme (IPP)](https://www.ntu.edu.sg/alibaba-ntu-jri/programmes).
+{: .lead}
 
 Before that, I obtained my B.E. degree in Electrical & Electronic Engineering at NTU, and my M.S. degree in Computer Science at National University of Singapore (NUS).
 
-My research interests focus on visual generation, multimodal large language models (MLLMs), and GUI agents.
+<div class="interests">
+  <h2 class="interests-label">Research Interests</h2>
+  <ul class="tag-row">
+    <li>Visual Generation</li>
+    <li>Multimodal LLMs</li>
+    <li>GUI Agents</li>
+  </ul>
+</div>
 

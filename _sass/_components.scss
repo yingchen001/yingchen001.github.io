@@ -84,6 +84,66 @@ hr {
 }
 
 /* -----------------------------------------------------------------------------
+ * About page: eyebrow subtitle, lead paragraph, interest tags
+ * -------------------------------------------------------------------------- */
+
+// Subtitle under the name. Rendered by _layouts/about.html as p.desc.
+.post-header .desc {
+  font-family: var(--font-sans);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semi);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin: 0 0 var(--sp-6);
+}
+
+// First paragraph of the bio, set larger to give the block a focal point.
+// Bootstrap's .lead sets font-weight: 300, which reads too light here.
+.lead {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-lg);
+  font-weight: var(--fw-normal);
+  color: var(--global-text-color);
+}
+
+.interests {
+  margin-top: var(--sp-6);
+
+  .interests-label {
+    font-family: var(--font-sans);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-semi);
+    letter-spacing: var(--ls-wide);
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 var(--sp-3);
+  }
+}
+
+// Same visual language as the publication venue badges, but outlined so the
+// two don't compete.
+.tag-row {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  padding: 0;
+  margin: 0;
+
+  li {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    line-height: 1.4;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: var(--r-full);
+    color: var(--global-text-color-light);
+    background-color: var(--surface-1);
+  }
+}
+
+/* -----------------------------------------------------------------------------
  * Navbar
  * -------------------------------------------------------------------------- */
 
