@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research Scientist &nbsp;·&nbsp; Ph.D., Nanyang Technological University
+subtitle: Researcher @ Tencent Hunyuan &nbsp;·&nbsp; Ph.D., Nanyang Technological University
 
 profile:
   align: right
@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I was a Research Scientist @ TikTok/ByteDance, Singapore. I received my Ph.D. in Computer Science from Nanyang Technological University (NTU), supervised by [Prof. Shijian Lu](https://sg-vilab.github.io), under the Alibaba–NTU [Industrial Postgraduate Programme (IPP)](https://www.ntu.edu.sg/alibaba-ntu-jri/programmes).
+I am currently a Researcher at Tencent Hunyuan. Previously, I was a Research Scientist at TikTok/ByteDance, Singapore. I received my Ph.D. in Computer Science from Nanyang Technological University (NTU), supervised by [Prof. Shijian Lu](https://sg-vilab.github.io), under the Alibaba–NTU [Industrial Postgraduate Programme (IPP)](https://www.ntu.edu.sg/alibaba-ntu-jri/programmes).
 {: .lead}
 
 Before that, I obtained my B.E. degree in Electrical & Electronic Engineering at NTU, and my M.S. degree in Computer Science at National University of Singapore (NUS).
@@ -31,4 +31,3 @@ Before that, I obtained my B.E. degree in Electrical & Electronic Engineering at
     <li>GUI Agents</li>
   </ul>
 </div>
-

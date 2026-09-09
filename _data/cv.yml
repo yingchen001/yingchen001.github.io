@@ -28,8 +28,11 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Researcher
+      institution: Tencent Hunyuan
+      year: 2026 - Present
     - title: Research Scientist
-      institution: Tiktok Pte Ltd
+      institution: TikTok Pte. Ltd.
       year: 2023 - 2026
       description:
         - Built a multimodal agent that coordinates video, speech, and text-editing tools for automated content creation.
