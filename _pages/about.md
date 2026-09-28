@@ -26,6 +26,8 @@ Before that, I obtained my B.E. degree in Electrical & Electronic Engineering at
 <div class="interests">
   <h2 class="interests-label">Research Interests</h2>
   <ul class="tag-row">
+    <li>Visual Generation</li>
+    <li>Multimodal LLMs</li>
     <li>CUA Agents</li>
   </ul>
 </div>
